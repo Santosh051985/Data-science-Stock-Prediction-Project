@@ -22,5 +22,5 @@ tfidf_vectorizer=TfidfVectorizer(stop_words='english', max_df=0.7)
     tfidf_train=tfidf_vectorizer.fit_transform(x_train) 
 tfidf_test=tfidf_vectorizer.transform(x_test)
 #DataFlair - Initialize a PassiveAggressiveClassifier
-    pac= PassiveAggressiveClassifier(max_iter=50)
-    pac.fit(tfidf_train,y_train)
+ pac= PassiveAggressiveClassifier(max_iter=50)
+ pac.fit(tfidf_train,y_train)

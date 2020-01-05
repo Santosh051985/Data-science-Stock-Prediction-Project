@@ -7,7 +7,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing, svm
 from sklearn.model_selection import train_test_split
 
-
 amazon = quandl.get("WIKI/AMZN")
 print(amazon.tail())
 amazon = amazon[['Adj. Close']]

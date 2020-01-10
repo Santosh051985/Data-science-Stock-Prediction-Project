@@ -10,7 +10,8 @@ from sklearn.model_selection import train_test_split
 amazon = quandl.get("WIKI/AMZN")
 print(amazon.tail())
 amazon = amazon[['Adj. Close']]
-forecast_out = int(30)             # predicting 30 days into future
+forecast_out = int(30)            
+# predicting 30 days into future
 amazon['Prediction'] = amazon[['Adj. Close']].shift(-forecast_out) 
 print(amazon.head())
 

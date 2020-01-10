@@ -5,16 +5,16 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import PassiveAggressiveClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
-          #Read the data
+          #Read the data from news.csv file
  df=pd.read_csv('D:\\DataFlair\\news.csv')
          #Get shape and head
  df.shape
  df.head()
-        #DataFlair - Get the labels
+        #Get the labels
  labels=df.label
  labels.head()
  labels.tail()
-          # Split the dataset
+          # Split the dataset training as well as test data set
  x_train,x_test,y_train,y_test=train_test_split(df['text'], labels, test_size=0.2, random_state=7)
        #Initialize a TfidfVectorizer 
 tfidf_vectorizer=TfidfVectorizer(stop_words='english', max_df=0.7)

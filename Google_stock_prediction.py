@@ -24,10 +24,11 @@ print(google.head())
 
 X = np.array(google.drop(['Prediction'], 1))
 X = preprocessing.scale(X)
+#  set X_forecast equal to last 30
+X_forecast = X[-forecast_out:]
+# remove last 60 from X
 
-X_forecast = X[-forecast_out:] #  set X_forecast equal to last 30
-X = X[:-forecast_out]                 # remove last 60 from X
-
+X = X[:-forecast_out]                 
 y = np.array(google['Prediction'])
 y = y[:-forecast_out]
 

@@ -1,3 +1,4 @@
+# Import Numpy Libraray
 import numpy as np
 import pandas as pd
 import itertools
@@ -6,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import PassiveAggressiveClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
           #Read the data from news.csv file
- df=pd.read_csv('D:\\DataFlair\\news.csv')
+ df=pd.read_csv('C:\\Users\\HP\\Desktop\\news.csv')
          #Get shape and head
  df.shape
  df.head()

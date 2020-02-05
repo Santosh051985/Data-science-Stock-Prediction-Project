@@ -8,7 +8,7 @@ from sklearn import preprocessing, svm
 from sklearn.model_selection import cross_validate
 from sklearn.model_selection import train_test_split
 
-
+# Load data from google
 google = quandl.get("WIKI/GOOG")
 total_rows = len(google.index)
 print(total_rows)

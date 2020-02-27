@@ -1,5 +1,6 @@
-# Import Numpy Libraray
+# Import Numpy for numerical Calculation
 import numpy as np
+# Import Pandas for manipulate dataframe
 import pandas as pd
 import itertools
 from sklearn.model_selection import train_test_split

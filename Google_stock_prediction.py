@@ -1,5 +1,7 @@
 import quandl
+# Import Pnadas for Data manipulation 
 import pandas as pd
+# Import numpy for scientic Calcularuon
 import numpy as np
 import datetime
 

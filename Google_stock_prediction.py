@@ -33,7 +33,7 @@ X_forecast = X[-forecast_out:]
 X = X[:-forecast_out]                 
 y = np.array(google['Prediction'])
 y = y[:-forecast_out]
-
+# Train Test Split the data set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
 
 # Training
